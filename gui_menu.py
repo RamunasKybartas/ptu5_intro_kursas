@@ -42,7 +42,7 @@ submeniukas.add_command(label="Trecias", command=trecias)
 
 meniukas.add_cascade(label="Fun", menu=submeniukas2)
 submeniukas2.add_command(label="Tell a joke", command=tell_a_joke)
-submeniukas3.add_command(label="Fart!", command=fart)
+submeniukas2.add_command(label="Fart!", command=fart)
 
 meniukas.add_cascade(label="Settings", menu=submeniukas3)
 submeniukas3.add_radiobutton(label="Setting 1")
