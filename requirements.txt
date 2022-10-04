@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 altgraph==0.17.3
 asttokens==2.0.8
 backcall==0.2.0
@@ -32,3 +33,6 @@ stack-data==0.5.0
 tornado==6.2
 traitlets==5.4.0
 wcwidth==0.2.5
+=======
+Pillow==9.2.0
+>>>>>>> e8b3520afa44ff27cd38e5518a508a1c7cb43b4f
