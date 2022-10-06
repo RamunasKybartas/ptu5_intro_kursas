@@ -77,20 +77,45 @@
 # eilutę (tiesiog yield'inti reikės ne skaičių o kitą duomenų tipą.). Reikės prisiminti darbą su failais :)
 
 
-def skaitom_faila(failas, zodis):
-    with open(failas, "r") as skaitom:
-        for eilute in skaitom:
-                yield  eilute
-                if zodis in eilute:
-                    break
+# def skaitom_faila(failas, zodis):
+#     with open(failas, "r") as skaitom:
+#         for eilute in skaitom:
+#                 yield  eilute
+#                 if zodis in eilute:
+#                     break
  
 
-                    
-
-
-
-
-bandom = skaitom_faila("c:\\codeacademy\\beginner_ending\\tekstas.txt", "acuteness")
+# bandom = skaitom_faila("c:\\codeacademy\\beginner_ending\\tekstas.txt", "acuteness")
                                        
-for x in bandom:
-    print(x)
+# for x in bandom:
+#     print(x)
+# --------------------------------------------------------------------------------------------------------------------
+
+# class Myiter:
+#     def __init__(self, number):
+#         self.number = number
+
+#     def __iter__ (self):
+#         self.n = 1
+#         return self
+
+#     def __next__ (self):
+#         if self.n <= self.number:
+#             result = self.n ** self.n
+#             self.n += 1
+#             return result
+#         else:
+#             raise StopIteration 
+
+
+# for i in Myiter(5):
+#     print(i)
+
+class Testas:
+    def __init__(self):
+        self.foo = 11
+        self._bar = 23
+        self.__baz = 42
+t = Testas()
+print(dir(t))
+print(t._Testas__baz)
