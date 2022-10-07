@@ -51,7 +51,7 @@ import numpy as np
 # print(matricele2 * 2)
 # matricele[2,2] = 9
 # print(matricele)
-bandomoji = np.full((5, 5), 1)
+bandomoji = np.full((5, 5), 3)
 antrine = np.full((1,5), 5).astype(float)
 print(bandomoji)
 bandomoji[1:4, 1:4] = 3
