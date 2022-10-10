@@ -32,13 +32,13 @@ def speed_test(fn):
     return wrapper
 
 
-# @speed_test
-# def get_status(website):
-#     r = requests.get(website)
-#     # print(r.status_code)
+@speed_test
+def get_status(website):
+    r = requests.get(website)
+    # print(r.status_code)
 
 
-# get_status('http://python.org')
+get_status('http://python.org')
 
 @speed_test
 def prime_finder(given_range):
