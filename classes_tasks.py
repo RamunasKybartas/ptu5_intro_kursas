@@ -202,17 +202,68 @@
 
 # Zodziai().verciam("labas ka tu")
 
-class FindPair():
-    def __init__(self, listas, target):
-        self.target = target
-        self.listas = listas
-    def calc(self):
-        for x in self.listas:
-            if x < self.target:
-                for number in self.listas:
-                    if x + number == self.target:
-                        return x, number
+# class FindPair():
+#     def __init__(self, listas, target):
+#         self.target = target
+#         self.listas = listas
+#     def calc(self):
+#         i = 0
+#         for i, x in enumerate(self.listas):
+#             if x < self.target:
+#                 j = 0
+#                 for j, number in enumerate(self.listas):
+#                     if x + number == self.target:
+#                         return (f"{x} {number} ir indeksai: {i} {j}")
+#                     j +=1
+#             i +=1        
+                        
 
-
-bandymas = FindPair([10,20,10,40,50,60,70], 50)
+bandymas = FindPair([10,20,10,40,50,60,70], 130)
 print(bandymas.calc())
+
+
+# 6. Write a Python class to find the three elements that sum to zero from a set of n real numbers. Go to the editor
+# Input array : [-25, -10, -7, -3, 2, 4, 8, 10]
+# Output : [[-10, 2, 8], [-7, -3, 10]]
+
+
+# class Finsum():
+#     def __init__(self, list):
+#         self.list = list
+
+#     def findzero(self):
+#         for x in self.list:
+#             for y in self.list:
+#                 for z in self.list:
+#                     if x+y+z == 0:                       
+#                         print(x,y,z)
+
+
+# bandom = Finsum([-25, -10, -7, -3, 2, 4, 8, 10])
+# bandom.findzero()
+
+
+# class py_solution:
+#  def threeSum(self, nums):
+#         nums, result, i = sorted(nums), [], 0
+#         while i < len(nums) - 2:
+#             j, k = i + 1, len(nums) - 1
+#             while j < k:
+#                 if nums[i] + nums[j] + nums[k] < 0:
+#                     j += 1
+#                 elif nums[i] + nums[j] + nums[k] > 0:
+#                     k -= 1
+#                 else:
+#                     result.append([nums[i], nums[j], nums[k]])
+#                     j, k = j + 1, k - 1
+#                     while j < k and nums[j] == nums[j - 1]:
+#                         j += 1
+#                     while j < k and nums[k] == nums[k + 1]:
+#                         k -= 1
+#             i += 1
+#             while i < len(nums) - 2 and nums[i] == nums[i - 1]:
+#                 i += 1
+#         return result
+
+# print(py_solution().threeSum([-25, -10, -7, -3, 2, 4, 8, 10]))
+
