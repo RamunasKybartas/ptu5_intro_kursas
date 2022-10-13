@@ -218,8 +218,8 @@
 #             i +=1        
                         
 
-bandymas = FindPair([10,20,10,40,50,60,70], 130)
-print(bandymas.calc())
+# bandymas = FindPair([10,20,10,40,50,60,70], 130)
+# print(bandymas.calc())
 
 
 # 6. Write a Python class to find the three elements that sum to zero from a set of n real numbers. Go to the editor
