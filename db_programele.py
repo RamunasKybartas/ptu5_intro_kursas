@@ -1,5 +1,5 @@
 import sqlite3
-from pprint import pprint
+
 
 connector = sqlite3.connect("SQL/cars.db")
 cursor = connector.cursor()
