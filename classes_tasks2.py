@@ -7,7 +7,6 @@ class Vehicle:
         self.max_speed = max_speed
         self.mileage = mileage
         
-
     def __repr__(self):
         return f"pavadinimas: {self.name}, max greitis: {self.max_speed}, pravaza: {self.mileage} ir spalva - {self.color}"
 
@@ -25,8 +24,8 @@ class Bus(Vehicle):
         self.capacity = capacity
         self.color = color
 
-    def seating_capacity(self, capacity=50):
-        return super().seating_capacity(capacity)
+    def seating_capacity(self):
+        return super().seating_capacity(self.capacity)
 
     def fare(self):
         return f"tvarkymo kaina masinai {self.name} - {self.capacity * 110} eur"
@@ -37,17 +36,23 @@ class Car(Vehicle):
 
 
 class MiniBus(Bus):
-    pass
+    def __init__(self, name, max_speed, mileage, capacity=20, color="Pink"):
+        super().__init__(name, max_speed, mileage, capacity, color)
 
 auto1 = Vehicle("Ford Ka", 200, 2102101)
 auto2= Bus("Big yellow Volvo", 120, 210100)
 auto3 = Car("Small BMW", 200, 150000)
-auto4 = MiniBus("Mini busiukas", 75, 90000, "Pink")
-# print(auto2.seating_capacity())
-# print(auto1.seating_capacity(5))
+auto4 = MiniBus("Mini busiukas", 75, 90000)
+print(auto2.seating_capacity())
+print(auto1.seating_capacity(5))
 print(auto1)
 print(auto2)
 print(auto3)
 print(auto4)
 print(auto1.fare(5))
 print(auto2.fare())
+print(auto4.fare())
+print(auto3.fare(3))
+print(auto4.__dict__)
+
+
