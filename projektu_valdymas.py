@@ -90,3 +90,5 @@ while True:
         delete_project()
     else:
         print("blogas pasirinkimas, ne ta raide")
+
+
